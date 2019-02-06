@@ -51,10 +51,11 @@ public class HW_2 {
         4 Создать квадратный двумерный целочисленный массив (количество строк и столбцов
         одинаковое), и с помощью цикла(-ов) заполнить его диагональные элементы единицами;
          */
-        int[][] intArr4 = new int[4][4];
+        int[][] intArr4 = new int[5][5];
         for (int i = 0; i < intArr4.length; i++) {
             for (int j = 0; j < intArr4[i].length; j++) {
                 if (i == j) intArr4[i][j] = 1;
+                if (i == intArr4[i].length - 1 - j) intArr4[i][j] = 1;
             }
         }
         System.out.println("Задание 4: " + Arrays.deepToString(intArr4));
@@ -79,7 +80,7 @@ public class HW_2 {
 
 
         //Задание 6
-        int[] intArr6 = {10,20, 30, 30,30};
+        int[] intArr6 = {10, 20, 30, 30, 30};
         System.out.println("Задание 6: = " + checkBalance(intArr6));
 
 
