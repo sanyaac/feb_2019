@@ -130,7 +130,7 @@ public class HW_3 {
 
         } while (true);
 
-        System.out.println("Игра закончена.");
+        System.out.println("Игра закончена. S");
     }
 
     public static String makeString(String string, int count) {
